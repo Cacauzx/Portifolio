@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Thinni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+    
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <div class="gradient-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="grid-overlay"></div>
+    <div class="particles-container" id="particles"></div>
+    
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <header class="header py-4 px-4 md:px-8" id="header">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="avatar">
+                <span>C</span>
+            </div>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="hero" class="section flex items-center justify-center min-h-screen">
+            <div class="container mx-auto px-4">
+                <div class="text-center" data-aos="fade-up">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                        <span class="typing-effect">Cacauzx</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto reveal-text" id="heroText">
+                        <span>Desenvolvedora apaixonada por criar experiências digitais interativas e criativas</span>
+                    </p>
+                    <div class="mt-10">
+                        <a href="#projetos" class="cta-button inline-block bg-gradient-to-r from-purple-600 to-cyan-500 text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1">
+                            Ver Projetos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sobre" class="section">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold section-title" data-aos="fade-right">Sobre</h2>
+                <div class="mt-8 max-w-3xl" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-xl text-gray-300 leading-relaxed reveal-text">
+                        <span>Olá, me chamo Cacauzx e sou apaixonada por programação. Meu foco é criar experiências interativas e divertidas que combinam criatividade e tecnologia. Estou sempre em busca de novos desafios e aprendizados para expandir minhas habilidades.</span>
+                    </p>
+                    <p class="text-xl text-gray-300 leading-relaxed mt-4 reveal-text">
+                        <span>Acompanhe alguns de meus projetos e descubra como transformo ideias em realidade através do código.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="habilidades" class="section">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold section-title" data-aos="fade-right">Habilidades</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+                    <div class="skill-item parallax" data-aos="zoom-in" data-aos-delay="100" data-depth="0.2">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">HTML</h3>
+                        <p class="text-gray-400">Estruturação semântica de conteúdo web com as mais recentes práticas do HTML5.</p>
+                    </div>
+                    
+                    <div class="skill-item parallax" data-aos="zoom-in" data-aos-delay="200" data-depth="0.3">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">CSS</h3>
+                        <p class="text-gray-400">Estilização avançada com CSS3, incluindo animações, flexbox e grid layout.</p>
+                    </div>
+                    
+                    <div class="skill-item parallax" data-aos="zoom-in" data-aos-delay="300" data-depth="0.2">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">JavaScript</h3>
+                        <p class="text-gray-400">Desenvolvimento de interatividade e funcionalidades dinâmicas para aplicações web.</p>
+                    </div>
+                    
+                    <div class="skill-item parallax" data-aos="zoom-in" data-aos-delay="400" data-depth="0.3">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Scratch</h3>
+                        <p class="text-gray-400">Criação de jogos e animações interativas usando programação visual por blocos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projetos" class="section">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold section-title" data-aos="fade-right">Projetos</h2>
+                <div class="projects-grid mt-12">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <svg class="monaliza-svg" viewBox="0 0 400 400">
+                                <defs>
+                                    <radialGradient id="face-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                        <stop offset="0%" stop-color="#FF7043" />
+                                        <stop offset="100%" stop-color="#FF5722" />
+                                    </radialGradient>
+                                    <radialGradient id="eye-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                        <stop offset="0%" stop-color="#FFFFFF" />
+                                        <stop offset="90%" stop-color="#F5F5F5" />
+                                    </radialGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <circle cx="200" cy="200" r="150" fill="url(#face-gradient)" />
+                                <circle cx="150" cy="150" r="30" fill="url(#eye-gradient)" stroke="#333" stroke-width="1" />
+                                <circle cx="250" cy="150" r="30" fill="url(#eye-gradient)" stroke="#333" stroke-width="1" />
+                                <circle cx="150" cy="150" r="10" fill="#333" class="pupil-left" filter="url(#glow)" />
+                                <circle cx="250" cy="150" r="10" fill="#333" class="pupil-right" filter="url(#glow)" />
+                                <path d="M150,270 Q200,240 250,235" stroke="#333" stroke-width="3" fill="none" />
+                                <polygon points="200,180 170,220 220,220" fill="#3F51B5" />
+                                <path d="M123,115 Q150,105 178,113" stroke="#333" stroke-width="3" fill="none" />
+                                <path d="M225,116 Q250,106 279,106" stroke="#333" stroke-width="3" fill="none" />
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="text-2xl project-title">Monaliza Interativa</h3>
+                            <p class="project-description">
+                                Projeto desenvolvido em p5.js que cria uma versão interativa da Monaliza. Os olhos da figura acompanham o movimento do mouse do usuário pela tela, criando uma experiência envolvente.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag tag-purple">p5.js</span>
+                                <span class="project-tag tag-cyan">Interativo</span>
+                                <span class="project-tag tag-green">Arte Digital</span>
+                            </div>
+                        </div>
+                        <a href="https://editor.p5js.org/Cacauzx/full/monaliza" target="_blank" class="project-link-overlay" aria-label="Ver projeto Monaliza"></a>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <svg class="corrida-svg" viewBox="0 0 400 400">
+                                <defs>
+                                    <linearGradient id="track-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#D2EBB5" />
+                                        <stop offset="100%" stop-color="#C5E1A5" />
+                                    </linearGradient>
+                                    <filter id="shadow">
+                                        <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#00000033"/>
+                                    </filter>
+                                </defs>
+                                <rect x="0" y="0" width="400" height="400" fill="url(#track-gradient)" />
+                                <rect x="350" y="0" width="10" height="400" fill="white" />
+                                <rect x="350" y="0" width="10" height="20" fill="black" />
+                                <rect x="350" y="40" width="10" height="20" fill="black" />
+                                <rect x="350" y="80" width="10" height="20" fill="black" />
+                                <rect x="350" y="120" width="10" height="20" fill="black" />
+                                <rect x="350" y="160" width="10" height="20" fill="black" />
+                                <rect x="350" y="200" width="10" height="20" fill="black" />
+                                <rect x="350" y="240" width="10" height="20" fill="black" />
+                                <rect x="350" y="280" width="10" height="20" fill="black" />
+                                <rect x="350" y="320" width="10" height="20" fill="black" />
+                                <rect x="350" y="360" width="10" height="20" fill="black" />
+                                <text x="20" y="100" font-size="40" class="emoji-1" filter="url(#shadow)">😎</text>
+                                <text x="20" y="300" font-size="40" class="emoji-2" filter="url(#shadow)">👽</text>
+                                <path d="M0,150 H400" stroke="#33333333" stroke-width="1" stroke-dasharray="5,5" />
+                                <path d="M0,350 H400" stroke="#33333333" stroke-width="1" stroke-dasharray="5,5" />
+                                <rect x="5" y="10" width="80" height="25" rx="5" fill="#ffffff80" />
+                                <text x="10" y="30" font-size="16" fill="#333">Pressione A</text>
+                                <rect x="5" y="210" width="80" height="25" rx="5" fill="#ffffff80" />
+                                <text x="10" y="230" font-size="16" fill="#333">Pressione S</text>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="text-2xl project-title">Corrida de Emojis</h3>
+                            <p class="project-description">
+                                Jogo interativo onde dois emojis competem em uma corrida. Os jogadores usam as teclas A e S para mover seus personagens até a linha de chegada. Quem chegar primeiro vence!
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag tag-purple">JavaScript</span>
+                                <span class="project-tag tag-cyan">Game</span>
+                                <span class="project-tag tag-green">Multiplayer</span>
+                            </div>
+                        </div>
+                        <a href="https://editor.p5js.org/Cacauzx/full/corrida-emojis" target="_blank" class="project-link-overlay" aria-label="Ver projeto Corrida de Emojis"></a>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <svg class="corrida-svg" viewBox="0 0 400 400">
+                                <defs>
+                                    <linearGradient id="track-gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#D2EBB5" />
+                                        <stop offset="100%" stop-color="#AED581" />
+                                    </linearGradient>
+                                    <filter id="shadow-2">
+                                        <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#00000033"/>
+                                    </filter>
+                                </defs>
+                                <rect x="0" y="0" width="400" height="400" fill="url(#track-gradient-2)" />
+                                <rect x="350" y="0" width="10" height="400" fill="white" />
+                                <rect x="350" y="0" width="10" height="10" fill="black" />
+                                <rect x="350" y="20" width="10" height="10" fill="black" />
+                                <rect x="350" y="40" width="10" height="10" fill="black" />
+                                <rect x="350" y="60" width="10" height="10" fill="black" />
+                                <rect x="350" y="80" width="10" height="10" fill="black" />
+                                <rect x="350" y="100" width="10" height="10" fill="black" />
+                                <rect x="350" y="120" width="10" height="10" fill="black" />
+                                <rect x="350" y="140" width="10" height="10" fill="black" />
+                                <rect x="350" y="160" width="10" height="10" fill="black" />
+                                <rect x="350" y="180" width="10" height="10" fill="black" />
+                                <rect x="350" y="200" width="10" height="10" fill="black" />
+                                <rect x="350" y="220" width="10" height="10" fill="black" />
+                                <rect x="350" y="240" width="10" height="10" fill="black" />
+                                <rect x="350" y="260" width="10" height="10" fill="black" />
+                                <rect x="350" y="280" width="10" height="10" fill="black" />
+                                <rect x="350" y="300" width="10" height="10" fill="black" />
+                                <rect x="350" y="320" width="10" height="10" fill="black" />
+                                <rect x="350" y="340" width="10" height="10" fill="black" />
+                                <rect x="350" y="360" width="10" height="10" fill="black" />
+                                <rect x="350" y="380" width="10" height="10" fill="black" />
+                                <text x="20" y="75" font-size="40" class="emoji-1" filter="url(#shadow-2)">😎</text>
+                                <text x="20" y="150" font-size="40" class="emoji-2" filter="url(#shadow-2)">❤️</text>
+                                <text x="20" y="225" font-size="40" class="emoji-3" filter="url(#shadow-2)">👽</text>
+                                <text x="20" y="300" font-size="40" class="emoji-4" filter="url(#shadow-2)">🚘</text>
+                                <path d="M0,100 H400" stroke="#33333333" stroke-width="1" stroke-dasharray="5,5" />
+                                <path d="M0,175 H400" stroke="#33333333" stroke-width="1" stroke-dasharray="5,5" />
+                                <path d="M0,250 H400" stroke="#33333333" stroke-width="1" stroke-dasharray="5,5" />
+                                <path d="M0,325 H400" stroke="#33333333" stroke-width="1" stroke-dasharray="5,5" />
+                                <rect x="5" y="40" width="25" height="25" rx="5" fill="#ffffff80" />
+                                <text x="12" y="60" font-size="16" fill="#333">A</text>
+                                <rect x="5" y="115" width="25" height="25" rx="5" fill="#ffffff80" />
+                                <text x="12" y="135" font-size="16" fill="#333">S</text>
+                                <rect x="5" y="190" width="25" height="25" rx="5" fill="#ffffff80" />
+                                <text x="12" y="210" font-size="16" fill="#333">D</text>
+                                <rect x="5" y="265" width="25" height="25" rx="5" fill="#ffffff80" />
+                                <text x="12" y="285" font-size="16" fill="#333">F</text>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="text-2xl project-title">Corrida de Emojis 2.0</h3>
+                            <p class="project-description">
+                                Versão aprimorada do jogo de corrida, agora com quatro emojis competindo simultaneamente. Os jogadores usam as teclas A, S, D e F para controlar seus personagens até a linha de chegada.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag tag-purple">JavaScript</span>
+                                <span class="project-tag tag-cyan">Game</span>
+                                <span class="project-tag tag-green">Multiplayer</span>
+                            </div>
+                        </div>
+                        <a href="https://editor.p5js.org/Cacauzx/full/corrida-emojis-2" target="_blank" class="project-link-overlay" aria-label="Ver projeto Corrida de Emojis 2.0"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="section">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold section-title" data-aos="fade-right">Contato</h2>
+                <div class="mt-12 max-w-2xl mx-auto">
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <a href="https://github.com/thinni" class="contact-link" target="_blank">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">GitHub</h3>
+                                <p class="text-gray-400">github.com/Cacauzx</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <a href="mailto:cacauzx@gmail.com" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Email</h3>
+                                <p class="text-gray-400">Cacauzx@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div class="mt-12 cta-box">
+                            <h3 class="text-2xl font-semibold mb-4 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Vamos trabalhar juntos?</h3>
+                            <p class="text-gray-300 mb-6">Estou sempre aberto a novos projetos e colaborações. Entre em contato para discutirmos suas ideias!</p>
+                            <a href="mailto:cacauzx@gmail.com" class="cta-button inline-block bg-gradient-to-r from-purple-600 to-cyan-500 text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1">
+                                Enviar mensagem
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Cacauzx. Todos os direitos reservados.</p>
+            <p class="mt-2 text-gray-500 text-sm">Desenvolvedora criativa & apaixonada por código</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out-cubic',
+                once: false,
+                mirror: false,
+                anchorPlacement: 'top-bottom'
+            });
+            
+            setTimeout(function() {
+                document.querySelector('.preloader').classList.add('fade-out');
+            }, 1000);
+            
+            const header = document.getElementById('header');
+            const scrollTop = document.getElementById('scrollTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                    scrollTop.classList.add('active');
+                } else {
+                    header.classList.remove('scrolled');
+                    scrollTop.classList.remove('active');
+                }
+                
+                document.querySelectorAll('.reveal-text').forEach(text => {
+                    const textPosition = text.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if (textPosition < screenPosition) {
+                        text.classList.add('active');
+                    }
+                });
+            });
+            
+            setTimeout(() => {
+                document.getElementById('heroText').classList.add('active');
+            }, 1500);
+            
+            scrollTop.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuBtn.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            const cursor = document.getElementById('cursor');
+            const cursorFollower = document.getElementById('cursor-follower');
+            
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                
+                setTimeout(() => {
+                    cursorFollower.style.left = e.clientX + 'px';
+                    cursorFollower.style.top = e.clientY + 'px';
+                }, 100);
+            });
+            
+            const links = document.querySelectorAll('a, button, .project-card');
+            
+            links.forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    cursor.classList.add('active');
+                    cursorFollower.classList.add('active');
+                });
+                
+                link.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('active');
+                    cursorFollower.classList.remove('active');
+                });
+            });
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 15;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                const size = Math.random() * 60 + 20;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                particle.style.opacity = Math.random() * 0.2 + 0.05;
+                
+                particle.style.animationDelay = `${Math.random() * 20}s`;
+                
+                particle.style.animationDuration = `${15 + Math.random() * 15}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+            
+            document.addEventListener('mousemove', (e) => {
+                const pupilLeft = document.querySelector('.pupil-left');
+                const pupilRight = document.querySelector('.pupil-right');
+                
+                if (pupilLeft && pupilRight) {
+                    const x = e.clientX / window.innerWidth;
+                    const y = e.clientY / window.innerHeight;
+                    
+                    const moveX = (x - 0.5) * 15;
+                    const moveY = (y - 0.5) * 15;
+                    
+                    pupilLeft.setAttribute('cx', 150 + moveX);
+                    pupilLeft.setAttribute('cy', 150 + moveY);
+                    
+                    pupilRight.setAttribute('cx', 250 + moveX);
+                    pupilRight.setAttribute('cy', 250 + moveY - 100);
+                }
+            });
+            
+            const emoji1 = document.querySelector('.emoji-1');
+            const emoji2 = document.querySelector('.emoji-2');
+            const emoji3 = document.querySelector('.emoji-3');
+            const emoji4 = document.querySelector('.emoji-4');
+            
+            function animateEmojis() {
+                if (emoji1) {
+                    let x1 = parseFloat(emoji1.getAttribute('x')) || 20;
+                    if (x1 < 320) {
+                        x1 += Math.random() * 2;
+                        emoji1.setAttribute('x', x1);
+                    }
+                }
+                
+                if (emoji2) {
+                    let x2 = parseFloat(emoji2.getAttribute('x')) || 20;
+                    if (x2 < 320) {
+                        x2 += Math.random() * 1.8;
+                        emoji2.setAttribute('x', x2);
+                    }
+                }
+                
+                if (emoji3) {
+                    let x3 = parseFloat(emoji3.getAttribute('x')) || 20;
+                    if (x3 < 320) {
+                        x3 += Math.random() * 1.5;
+                        emoji3.setAttribute('x', x3);
+                    }
+                }
+                
+                if (emoji4) {
+                    let x4 = parseFloat(emoji4.getAttribute('x')) || 20;
+                    if (x4 < 320) {
+                        x4 += Math.random() * 1.7;
+                        emoji4.setAttribute('x', x4);
+                    }
+                }
+                
+                requestAnimationFrame(animateEmojis);
+            }
+            
+            animateEmojis();
+            
+            document.addEventListener('mousemove', (e) => {
+                const parallaxElements = document.querySelectorAll('.parallax');
+                const mouseX = e.clientX / window.innerWidth - 0.5;
+                const mouseY = e.clientY / window.innerHeight - 0.5;
+                
+                parallaxElements.forEach(el => {
+                    const depth = parseFloat(el.getAttribute('data-depth')) || 0.2;
+                    const moveX = mouseX * depth * 30;
+                    const moveY = mouseY * depth * 30;
+                    
+                    el.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+                });
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94bbc515a517bc8c',t:'MTc0OTI1MzM4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
